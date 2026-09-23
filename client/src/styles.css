@@ -1,0 +1,145 @@
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #eef2ff, #f8fafc);
+  color: #1e293b;
+}
+
+
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 50px auto;
+}
+
+
+h1 {
+  text-align: center;
+  font-size: 38px;
+  margin-bottom: 30px;
+  color: #312e81;
+}
+
+
+form {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+
+
+input {
+  padding: 13px 16px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  font-size: 16px;
+  outline: none;
+  background: white;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
+}
+
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 12px 18px;
+  font-size: 15px;
+  cursor: pointer;
+  background: #6366f1;
+  color: white;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: #4f46e5;
+  transform: translateY(-1px);
+}
+
+.habit-item {
+  background: white;
+  border-radius: 16px;
+  padding: 20px 24px;
+  margin-bottom: 18px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  border-left: 5px solid #6366f1;
+
+  transition: 0.2s;
+}
+
+.habit-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+}
+
+
+.habit-item h3 {
+  margin: 0 0 6px;
+  font-size: 21px;
+  color: #1e293b;
+}
+
+.habit-item p {
+  margin: 0;
+  color: #64748b;
+  font-size: 15px;
+}
+
+
+.habit-item button {
+  margin-left: 10px;
+}
+
+
+.habit-item button:last-child {
+  background: #ef4444;
+}
+
+.habit-item button:last-child:hover {
+  background: #dc2626;
+}
+
+
+@media (max-width: 650px) {
+  .container {
+    width: 92%;
+    margin: 30px auto;
+  }
+
+  form {
+    flex-direction: column;
+  }
+
+  input,
+  form button {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .habit-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .habit-item div:last-child {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .habit-item button {
+    margin-left: 5px;
+  }
+}
